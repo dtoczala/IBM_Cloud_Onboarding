@@ -26,10 +26,65 @@ We have organized the material here to try to be helpful for the administrators 
 
 # IBM Cloud Onboarding for Strategists
 
+## Account types on the IBM Cloud
+paygo vs Subscription, IaaS and PaaS, linking accounts, etc.
+
+### Subscription issues to be aware of
+
+## Setting up a Functional ID for your Account Owner (see Admin)
+
+## Federation of your IBM Cloud ID's
+
+## Security models
+
+### Cloud Foundry Orgs and Spaces
+
+### Resource Groups and Access Groups
+
+## Project types and IBM Cloud Usage
+
+### Business models and IBM Cloud organization
+
+
+
 # IBM Cloud Onboarding for Administrators
+
+## Setting up a Functional ID for your Account Owner
+
+## Naming Conventions
+
+## Administrative tasks
+Talk about how you want to script as much as possible.
+
+### Adding new users
+
+### Adding new projects
+
+### Billing and billing issues
+
+### Removing Users
+
+### Archiving Projects
+
+## Suggested Documentation
+What things should you be maintaining (documents, dashboards, etc.) to communicate the state of everything going on inside your IBM Cloud area?
 
 # IBM Cloud Onboarding for Users
 
+## How to get an IBM ID
 
+## Choosing services
 
+### Choosing service plans
+
+### Using Service Credentials
+
+### Learning about services
+
+## Joining projects
+
+## Account context 
+"Why can't I see the services that I created yesterday???"
+
+## Educational Resources
 
