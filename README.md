@@ -52,7 +52,6 @@ paygo vs Subscription, IaaS and PaaS, linking accounts, etc.
 
 ### Subscription issues to be aware of
 
-
 ## Setting up a Functional ID for your Account Owner (see Admin)
 
 ## Federation of your IBM Cloud ID's
@@ -68,10 +67,13 @@ paygo vs Subscription, IaaS and PaaS, linking accounts, etc.
 ### Business models and IBM Cloud organization
 
 
-
 # IBM Cloud Onboarding for Administrators
 
 ## Setting up a Functional ID for your Account Owner
+When looking to use the IBM Cloud for organizational (or Enterprise) use, it is considered a best practice to have your organization procure an IBM Cloud subscription (see the section on [Account types on the IBM Cloud](https://github.com/dtoczala/IBM_Cloud_Onboarding#account-types-on-the-ibm-cloud)).  Your subscription should be associated with an organization email address, not a personal user address.  This means that you will need to ask your IT department for a functional email address (or Functional ID) that is not associated with any one user.  This will be you IBM Cloud Administrator account.
+This is done because often people change roles within a company, or leave a company, and accessing their account once this happens could be difficult (or impossible).  You don't want your organizational cloud infrastructure with a single point of failure.
+For example, if I was setting up an IBM Cloud account and environment for the Acme company, I would not associate the account with my email address (joe.smith@acme.com).  Instead, I would have an new email account created called IBMCloudAdmin@acme.com, and I would use this account to create a new IBM Cloud account ID, and then use this ID for all IBM Cloud administrative activities.
+Keep in mind that this new account should be auto-forwarding email to a small group of people within your organization.  The IBM Cloud team will sometimes email updates on critical issues and maintenance activites to the owner email address, and you want to make sure that ALL of your administrators see these emails.
 
 ## Naming Conventions
 
