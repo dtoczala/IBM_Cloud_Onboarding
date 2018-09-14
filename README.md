@@ -16,12 +16,14 @@ The IBM Cloud can be complex and somewhat overwhelming, but we're here to help y
   - [Naming Conventions](https://github.com/dtoczala/IBM_Cloud_Onboarding#naming-conventions)
   - [Administrative Tasks](https://github.com/dtoczala/IBM_Cloud_Onboarding#administrative-tasks)
   - [Suggested Documentation](https://github.com/dtoczala/IBM_Cloud_Onboarding#suggested-documentation)
+  - Support ADDME!!!
 - **[IBM Cloud Onboarding for Users](https://github.com/dtoczala/IBM_Cloud_Onboarding/tree/master#ibm-cloud-onboarding-for-users)**
   - [How to Get an IBM ID](https://github.com/dtoczala/IBM_Cloud_Onboarding#how-to-get-an-ibm-id)
   - [Choosing Services](https://github.com/dtoczala/IBM_Cloud_Onboarding#choosing-services)
   - [Joining Projects](https://github.com/dtoczala/IBM_Cloud_Onboarding#joining-projects)
   - [Account Context](https://github.com/dtoczala/IBM_Cloud_Onboarding#account-context)
   - [Educational Resources](https://github.com/dtoczala/IBM_Cloud_Onboarding#educational-resources)
+  - Support ADDME!!!
 
 ---
 # Introduction - Getting Started
@@ -47,9 +49,12 @@ We have organized the material here to try to be helpful for the administrators 
 # IBM Cloud Onboarding for Strategists
 
 ## Account types on the IBM Cloud
-=====> paygo vs Subscription,
-=====> IaaS and PaaS, 
-=====> linking accounts, etc.
+- paygo vs Subscription,
+-- How do I pay/get billed for my subscription?  Billing can be monthly, quarterly, or up front....
+-- What happens when I "go over"?
+-- I have not gone over my subscription, but this month I got a bill for a support overage?  Why?  (Validate this with the project office, or with Stephanie Hunter)
+- IaaS and PaaS, 
+- linking accounts, etc.
 
 ### Subscription issues to be aware of
 
