@@ -110,6 +110,11 @@ Talk about how you want to script as much as possible.
 ## Suggested Documentation
 What things should you be maintaining (documents, dashboards, etc.) to communicate the state of everything going on inside your IBM Cloud area?
 
+## Training Available
+There is not a lot of training available that is focused on IBM Cloud administration right now.  One option that you have is to follow the [Learning Journeys](), and go and look at the following two learning journeys:
+- [Administering a Cloud Infrastructure](https://www-03.ibm.com/services/learning/itesp.wss/zz-en?pageType=journey_description&journeyId=LDE-ITNS_189) - primarily focused on Softlayer (IaaS or Infrastructure as a Service) administration.  This is older, so the user interfaces have changed a bit, but the basic concepts still hold true.
+- [Administering a Bluemix Based Application](https://www-03.ibm.com/services/learning/ites.wss/zz-en?pageType=journey_description&journeyId=adblmx_1) - this content is older (Bluemix is the former name of the IBM Cloud), so the user interfac e will be different, but most of the concepts still hold true.
+
 # IBM Cloud Onboarding for Users
 Getting onto the [IBM Cloud is easy](https://console.bluemix.net), and beginning to use the services and capabilities of the IBM Cloud is relatively easy as well.  It's important that you understand the basic cloud concepts from the [Introduction - Getting Started](https://github.com/dtoczala/IBM_Cloud_Onboarding/tree/master#introduction---getting-started) section.  Make sure that you review that section.
 
@@ -132,4 +137,6 @@ if you are not lucky enough to work with a company with federated ID's, you will
 "Why can't I see the services that I created yesterday???"
 
 ## Educational Resources
+There is specialized support and training for all of the services on the IBM Cloud.  When looking at the service in the catalog, just click on the **View Docs** link, and you will see not only service documentation, but starter projects, and other materials to help you get started with that particular service.
 
+There is also a more general course, called [Administering a Bluemix Based Application](https://www-03.ibm.com/services/learning/ites.wss/zz-en?pageType=journey_description&journeyId=adblmx_1), but this content is older (Bluemix is the former name of the IBM Cloud).  The user interface will be different, but most of the concepts still hold true.
