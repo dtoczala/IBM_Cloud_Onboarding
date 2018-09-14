@@ -47,13 +47,18 @@ We have organized the material here to try to be helpful for the administrators 
 # IBM Cloud Onboarding for Strategists
 
 ## Account types on the IBM Cloud
-paygo vs Subscription, IaaS and PaaS, linking accounts, etc.
+=====> paygo vs Subscription,
+=====> IaaS and PaaS, 
+=====> linking accounts, etc.
 
 ### Subscription issues to be aware of
 
 ## Setting up a Functional ID for your Account Owner (see Admin)
 
 ## Federation of your IBM Cloud ID's
+Federation of your IBM Cloud ID's is important to understand.  When you first get onto the IBM Cloud, you sign up for an account, typically using your corporate email address as your IBM ID.  You then create a password, which is specific to the IBM Cloud.  However, if you Federate your IBM Cloud ID's then you will authenticate against YOUR corporate ID servers, using your own internal ID (corporate email address) and your own corporate password.  This allows you to also set up a [Single-Sign-On (SSO) capability for your IBM Cloud](https://console.bluemix.net/docs/customer-portal/cpmanacctconfsso.html#cp_setupsso).
+You can learn more about federating your IBM Cloud ID's by reading the [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide).  It covers many of the technical details of account federation, as well as an overview of the process.  
+Once you have federated IBM Cloud ID's, you will be able to more easily manage your users using things like [dynamic rules for access groups](https://console.bluemix.net/docs/iam/accessgroup_rules.html#rules) to do automated access control that is in line with your corporate security guidelines.
 
 ## Security models
 
