@@ -57,6 +57,7 @@ We have organized the material here to try to be helpful for the administrators 
 - linking accounts, etc.
 
 ### Subscription issues to be aware of
+Subscriptions are a special kind of Cloud entitlement on the IBM Cloud.  They allow you to use IBM Cloud resources at a reduced price, in exchange for a commitment to use a minimum amount of IBM Cloud services.  
 
 ## Setting up a Functional ID for your Account Owner (see Admin)
 
