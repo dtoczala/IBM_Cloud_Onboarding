@@ -49,7 +49,7 @@ We have organized the material here to try to be helpful for the administrators 
 # IBM Cloud Onboarding for Strategists
 
 ## Account types on the IBM Cloud
-- paygo vs Subscription,
+Since we are thinking about doing "real" application development work, we're going to need more capability than the trial and free versions of the services provide.  That means that you will need to spend some amount of money to host these various services and capabilities.  Check out this nice overview of the various [IBM Cloud Account Types](https://console.bluemix.net/docs/account/index.html#subscription) to get an idea of your options.  The capabilities and limitations of these options differ, so it is important that you understand them.
 -- How do I pay/get billed for my subscription?  Billing can be monthly, quarterly, or up front....
 -- What happens when I "go over"?
 -- I have not gone over my subscription, but this month I got a bill for a support overage?  Why?  (Validate this with the project office, or with Stephanie Hunter)
