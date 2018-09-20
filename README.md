@@ -34,11 +34,11 @@ The IBM Cloud is rapidly evolving and changing to better meet the needs of our c
 ## Cloud Basics
 The IBM Cloud has two major components, and it is good to have a basic understanding of both.   The first model is based on Cloud Foundry.  The [Cloud Foundry access model](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) is a framework for establishing a hierarchy of user access and security roles for an organization.  It is based on a hierarchy of conceptual groupings, with the **Account** at the top, which may have one or more **Organizations** which belong to the **Account**.  Each **Organization** may have one or more **Spaces** which are associated with it.  Each Account/Organization/Space represents a working environment.
 
-The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  
+The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  These Resource Groups serve as the “home” for a variety of different infrastructure and IBM Cloud services.  Access to these Resource Groups can be given on an individual basis, or can be assigned through the use of Access Groups.  If you want to learn more about Resource Groups, Access Groups, and the IBM Access Management (IAM) system, read this great paper on [Getting Started with IBM Cloud IAM](https://github.com/jamesbeltonIBM/IBMCloudIAM/blob/master/IBM%20Cloud%20and%20IAM.pdf).
 
 ### References for Further Reading
 - [Signing Up for the IBM Cloud](https://console.bluemix.net/docs/account/adminpublic.html#signing-up-for-ibm-cloud) - Documentation on getting started.
-- [Bluemix and Watson – Getting started right](https://developer.ibm.com/dwblog/2017/ibm-cloud-bluemix-watson-new-customers/) - a good primer on getting started with IBM Watson services on the IBM Cloud.
+- [Getting Started Right on the IBM Cloud](https://dtoczala.wordpress.com/2018/09/20/getting-started-right-on-the-ibm-cloud/) - a good primer on getting started with IBM Watson services on the IBM Cloud.
 - [IBM Cloud – Identity and Access Management](https://github.com/jamesbeltonIBM/IBMCloudIAM) - An EXCELLENT beginner’s guide to understanding IAM written by [James Belton](https://github.com/jamesbeltonIBM).  My recommendation for the place to start when attempting to understand IAM on IBM Cloud.
 - [Bluemix CLI Commands for Managing Keys and Policies](https://console.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) - a listing and description of the various command line options for managing keys and policies for IAM.
 - [IAM Recipe for IBM Cloud Access & Migration Path from CF](https://brandymguillory.wordpress.com/2018/05/31/iam-recipe-for-ibm-cloud-access-migration-path-from-cf/) - a nice walk through of setting up IAM for a real-world application.
@@ -50,16 +50,24 @@ We have organized the material here to try to be helpful for the administrators 
 
 ## Account types on the IBM Cloud
 Since we are thinking about doing "real" application development work, we're going to need more capability than the trial and free versions of the services provide.  That means that you will need to spend some amount of money to host these various services and capabilities.  Check out this nice overview of the various [IBM Cloud Account Types](https://console.bluemix.net/docs/account/index.html#subscription) to get an idea of your options.  The capabilities and limitations of these options differ, so it is important that you understand them.
--- How do I pay/get billed for my subscription?  Billing can be monthly, quarterly, or up front....
+
+It is important to know and understand the distinction between Infrastructure as a Service (IaaS) and Platform as a Service (PaaS).  ***IaaS services*** are commonly found in the ***Infrastructure*** section on the IBM Cloud.  This includes things like [bare metal servers](https://console.bluemix.net/catalog/infrastructure/bare-metal), [virtual servers](https://console.bluemix.net/catalog/infrastructure/virtual-server-group), VM[Ware vSphere](https://console.bluemix.net/infrastructure/vmware-solutions/console/gettingstarted/vss), [load balancers](https://console.bluemix.net/catalog/infrastructure/load-balancer-group), [internet services](https://console.bluemix.net/catalog/services/internet-services), and other similar resources.  ***PaaS services*** tend to be everything else, including things like [Blockchain networks](https://console.bluemix.net/developer/blockchain/dashboard), [Databases](https://console.bluemix.net/catalog/services/cloudant), and the [various Watson services](https://console.bluemix.net/developer/watson/dashboard).
+
+When you sign up for the IBM Cloud, you will get a personal account set up, which is associated with your username (typically your email ID).  This account is a trial account - it allows you to do things for free, and to use free plans for most of the services on the IBM Cloud.  This is your **PaaS account**.  if you look at your profile in the upper right hand corner of your browser window, you might see a 7 digit number before your name.  This seven digit number is your ***linked IaaS account***.  This allows you to easily use both IaaS and PaaS resources within the same account - and it is part of our "One Cloud" goal at IBM.  If you do not have a linked account, and you would like one, please contact your IBM team, or open a support ticket asking for the creation of a linked account.
+
+Subscription billing can be done in a variety of ways, you should check with your IBM Sales representative for your available options.  Some things to keep in mind when you have a subscription:
+
+-- Subscriptions are typically 
+
 -- What happens when I "go over"?
+
 -- I have not gone over my subscription, but this month I got a bill for a support overage?  Why?  (Validate this with the project office, or with Stephanie Hunter)
-- IaaS and PaaS, 
-- linking accounts, etc.
 
 ### Subscription issues to be aware of
 Subscriptions are a special kind of Cloud entitlement on the IBM Cloud.  They allow you to use IBM Cloud resources at a reduced price, in exchange for a commitment to use a minimum amount of IBM Cloud services.  
 
 ## Setting up a Functional ID for your Account Owner (see Admin)
+For more information on setting up a [functional ID for your account owner](https://github.com/dtoczala/IBM_Cloud_Onboarding#setting-up-a-functional-id-for-your-account-owner), see the write up in the Admin section.
 
 ## Federation of your IBM Cloud ID's
 Federation of your IBM Cloud ID's is important to understand.  When you first get onto the IBM Cloud, you sign up for an account, typically using your corporate email address as your IBM ID.  You then create a password, which is specific to the IBM Cloud.  However, if you Federate your IBM Cloud ID's then you will authenticate against YOUR corporate ID servers, using your own internal ID (corporate email address) and your own corporate password.  This allows you to also set up a [Single-Sign-On (SSO) capability for your IBM Cloud](https://console.bluemix.net/docs/customer-portal/cpmanacctconfsso.html#cp_setupsso).
@@ -73,8 +81,6 @@ The IBM Cloud currently operates with two different securoity models, which were
 
 ### Cloud Foundry Orgs and Spaces
 The [Cloud Foundry access model](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) is a framework for establishing a hierarchy of user access and security roles for an organization.  It is based on a hierarchy of conceptual groupings, with the **Account** at the top, which may have one or more **Organizations** which belong to the **Account**.  Each **Organization** may have one or more **Spaces** which are associated with it.  Each Account/Organization/Space represents a working environment.
-
-
 
 ### Resource Groups and Access Groups
 The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  
