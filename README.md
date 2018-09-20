@@ -34,7 +34,7 @@ The IBM Cloud is rapidly evolving and changing to better meet the needs of our c
 ## Cloud Basics
 The IBM Cloud has two major components, and it is good to have a basic understanding of both.   The first model is based on Cloud Foundry.  The [Cloud Foundry access model](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) is a framework for establishing a hierarchy of user access and security roles for an organization.  It is based on a hierarchy of conceptual groupings, with the **Account** at the top, which may have one or more **Organizations** which belong to the **Account**.  Each **Organization** may have one or more **Spaces** which are associated with it.  Each Account/Organization/Space represents a working environment.
 
-The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  These Resource Groups serve as the “home” for a variety of different infrastructure and IBM Cloud services.  Access to these Resource Groups can be given on an individual basis, or can be assigned through the use of Access Groups.  If you want to learn more about Resource Groups, Access Groups, and the IBM Access Management (IAM) system, read this great paper on [Getting Started with IBM Cloud IAM](https://github.com/jamesbeltonIBM/IBMCloudIAM/blob/master/IBM%20Cloud%20and%20IAM.pdf).
+The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  These Resource Groups serve as the “home” for a variety of different infrastructure and IBM Cloud services.  Access to these Resource Groups can be given on an individual basis, or can be assigned through the use of Access Groups.  If you want to learn more about Resource Groups, Access Groups, and the IBM Access Management (IAM) system, read this great paper on [Getting Started with IBM Cloud IAM](https://github.com/jamesbeltonIBM/IBMCloudIAM/blob/master/IBM%20Cloud%20and%20IAM.pdf).
 
 ### References for Further Reading
 - [Signing Up for the IBM Cloud](https://console.bluemix.net/docs/account/adminpublic.html#signing-up-for-ibm-cloud) - Documentation on getting started.
@@ -60,9 +60,6 @@ It is important to know and understand the distinction between Infrastructure as
 
 When you sign up for the IBM Cloud, you will get a personal account set up, which is associated with your username (typically your email ID).  This account is a trial account - it allows you to do things for free, and to use free plans for most of the services on the IBM Cloud.  This is your **PaaS account**.  if you look at your profile in the upper right hand corner of your browser window, you might see a 7 digit number before your name.  This seven digit number is your ***linked IaaS account***.  This allows you to easily use both IaaS and PaaS resources within the same account - and it is part of our "One Cloud" goal at IBM.  If you do not have a linked account, and you would like one, please contact your IBM team, or open a support ticket asking for the creation of a linked account.
 
-### Subscription issues to be aware of
-Subscriptions are a special kind of Cloud entitlement on the IBM Cloud.  They allow you to use IBM Cloud resources at a reduced price, in exchange for a commitment to use a minimum amount of IBM Cloud services.  
-
 ## Setting up a Functional ID for your Account Owner (see Admin)
 For more information on setting up a [functional ID for your account owner](https://github.com/dtoczala/IBM_Cloud_Onboarding#setting-up-a-functional-id-for-your-account-owner), see the write up in the Admin section.
 
@@ -78,6 +75,18 @@ The IBM Cloud currently operates with two different securoity models, which were
 
 ### Cloud Foundry Orgs and Spaces
 The [Cloud Foundry access model](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) is a framework for establishing a hierarchy of user access and security roles for an organization.  It is based on a hierarchy of conceptual groupings, with the **Account** at the top, which may have one or more **Organizations** which belong to the **Account**.  Each **Organization** may have one or more **Spaces** which are associated with it.  Each Account/Organization/Space represents a working environment.
+
+Your users can be assigned one of three different roles at the **Organization** level.  These are:
+- Managers - Organization managers can create, view, edit, or delete spaces within the organization, view the organization's usage and quota, invite team members to the Organization, manage who has access to the Organization and their roles in the Organization, and manage custom domains for the Organization.
+- Billing Manager - Billing managers can view runtime and service usage information for the organization on the Usage Dashboard page.  Multiple Organizations can often have the same Billing Manager.
+- Auditor - Organization auditors can view application and service content in the organization. Auditors can also view the team members in the Organization and their assigned roles, and the quota for the Organization. This role is assigned to all invitees by default.
+
+Your users can be assigned one of three different roles at the **Space** level.  These are:
+- Manager -   Space managers can add existing team members and manage roles within the Space. The Space manager can also view the number of instances, service bindings, and resource use for each application in the space.
+- Developer –  Space developers create, delete, and manage applications and services within the Space. Managing tasks include deploying apps, starting or stopping apps, binding or unbinding a service to an application. The Space developer can associate internal or external URLs with an application in the space.
+- Auditor -  Space auditors have read-only access to all information about the space, such as information about the number of instances, service bindings, and resource use for each application in the Space.
+
+The combination of the two roles, at the organization level and at the space level, will control what your users can and cannot do in the various spaces on the IBM Cloud.
 
 ### Resource Groups and Access Groups
 The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  
