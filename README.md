@@ -125,11 +125,11 @@ Below is a set of naming conventions that we have used in many different environ
 
 - **Organizations** -   **<project_name>_ORG**
     - For example, AlphaProj_ORG.
-- **Spaces** - **<project_name>_<environment>_SPC**
+- **Spaces** - **<project_name>_\<environment>_SPC**
     - For example, AlphaProj_Dev and AlphaProj_Test spaces.  Try to have a common set of environments: like Dev, Test, QA, Staging, Pre-Prod, etc.
-- **Resource Groups** - **<project_name>_<environment>_RG**
+- **Resource Groups** - **<project_name>_\<environment>_RG**
     - For example, AlphaProj_Dev_RG and AlphaProj_Test_RG groups (which are paired with the corresponding spaces).
-- **Access Groups** - **<project_name>_<environment>_<usertype>_AG**
+- **Access Groups** - **<project_name>_\<environment>_\<usertype>_AG**
     - For example, AlphaProj_Dev_Devs_AG and AlphaProj_Test_Admins_AG access groups.  Try to have a common set of user types: like Devs, Testers, Admins, DBAs, Architects, etc.
 
 ## Administrative tasks
