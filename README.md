@@ -96,8 +96,17 @@ The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has su
 
 ## Project types and IBM Cloud Usage
 
-### Business models and IBM Cloud organization
+### Internal Projects
 
+Internal projects are easy.  You don't need to worry about passing along costs to end customers, and you shouldn't have to worry too much about the visibility of the charges being generated on the IBM Cloud.  All you need to make sure of is that you are following adequate [Naming Conventions](https://github.com/dtoczala/IBM_Cloud_Onboarding#naming-conventions), so you can properly do any chargebacks and calculate costs to the business.
+
+### External Projects
+
+You need to be aware of your business model, and specifically how you anticipate deploying and generating revenue from your application.  If your application is being provided to your customers as a convenience, or as part of a larger capability, then you don't have to worry about passing along the costs of your IBM Cloud based capabilities.  That makes it very much like an internal project - you just need to track and isolate the costs.
+
+If your application is provided to customers as a capability and you would like to pass along the charges incurred, then you will need to figure out how to implement this business model.  There is nothing built into the IBM Cloud capabilities that differentiates between API calls, or some of the other usage/billing metrics.  Your application will need to track customer specific usage of the various IBM Cloud capabilities, and then provide a way to trace this usage back to the charges incurred on the IBM Cloud platform.  This can be difficult to maintain, as API's change and pricing changes over time.  
+
+We much more strongly recommend that our customers provide capability in tiers to their customers, and that they then try to recover their IBM Cloud costs in a less granular manner.  So your organization will be charging customers a monthly fee based on usage, perhaps across three tiers (light, medium, heavy), and then having the sum of all of these user fees roughly cover the monthly IBM Cloud costs.  This will be easier to maintain, and will require less operational overhead in the long run.
 
 # IBM Cloud Onboarding for Administrators
 IBM Cloud Administrators can face different challenges and will have different concerns that other user groups.  Sometimes the IBM Cloud Administrator will be a 
@@ -109,6 +118,22 @@ For example, if I was setting up an IBM Cloud account and environment for the Ac
 Keep in mind that this new account should be auto-forwarding email to a small group of people within your organization.  The IBM Cloud team will sometimes email updates on critical issues and maintenance activites to the owner email address, and you want to make sure that ALL of your administrators see these emails.
 
 ## Naming Conventions
+
+A failure to use naming conventions for your orgs, spaces, and resource groups, will lead to increased administrative burden, and the confusion of your Cloud users.  Solid naming convetions will make chargebacks easier to compute, and will help your users (both technical and non-technical) to more easily navigate all of the projects in flight on the IBM Cloud.
+
+Below is a set of naming conventions that we have used in many different environments.  Feel free to use these as-is, or to make modifications to them.  The important thing is that you establish naming conventions, and that you remain consistent in following those conventions.
+
+- **Organizations** -   **<project_name>_ORG**
+- - For example, AlphaProj_ORG.
+Spaces - <project_name>_<environment>_SPC
+For example, AlphaProj_Dev and AlphaProj_Test spaces.
+Try to have a common set of environments: like Dev, Test, QA, Staging, Pre-Prod, etc.
+Resource Groups - <project_name>_<environment>_RG
+For example, AlphaProj_Dev_RG and AlphaProj_Test_RG groups (which are paired with the corresponding spaces).
+Access Groups - <project_name>_<environment>_<usertype>_AG
+For example, AlphaProj_Dev_Devs_AG and AlphaProj_Test_Admins_AG access groups.
+Try to have a common set of user types: like Devs, Testers, Admins, DBAs, Architects, etc.
+
 
 ## Administrative tasks
 Talk about how you want to script as much as possible.
