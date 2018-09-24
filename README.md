@@ -152,8 +152,23 @@ You can write these scripts as programs which access the IBM Cloud API, or you c
 You can also choose to just create your own custom tool to do your more common tasks, and to properly enforce your naming conventions and your IBM Cloud standards.  You can see an example of a tool like this in [Administering Your IBM Cloud Account](https://developer.ibm.com/dwblog/2018/administering-your-ibm-cloud-account-a-script-to-help/), which has a link to a GitHub repository with a sample script written in Python.
 
 ### Adding new users
+Adding new users is something that you will always need to do.  There are two different types of new user additions to your environment.  The first is adding a new user where you will need to add them to the IBM Cloud account, and then give them access to the spaces, orgs, and resource groups for the project that they will work on.  The second one is a subset of this - where the user already has access to your IBM Cloud environment, but now needs access to additional projects or resources.
+
+You also need to determine if your new user will need to have access to the IaaS capabilities and will need to have their account added to the access list for your IaaS account.  If they want to create virtual machines, bare metal servers, storage repositories, networks or other infrastructure resources, they will need this.
+
+So depending on what your user wants to do, and what they need access to, adding a new user will probably require more than a single command or step.
 
 ### Adding new projects
+Adding new projects is similar to adding new users in a number of ways.  It is something that you will always need to do.  It also requires multiple steps, and so it will end up being a multi-step or multi-command operation.  You will need to do the following (all while following your naming conventions and standards):
+
+- Create a new organization
+- Create new spaces
+- Create new resource groups
+- Create new access groups
+- Add/create project users
+- Assign project users to the appropriate roles/access groups
+- Create any new resource instances needed
+- Create and apply any service specific policies and roles
 
 ### Billing and billing issues
 
