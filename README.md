@@ -92,7 +92,19 @@ Your users can be assigned one of three different roles at the **Space** level. 
 The combination of the two roles, at the organization level and at the space level, will control what your users can and cannot do in the various spaces on the IBM Cloud.
 
 ### Resource Groups and Access Groups
-The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.  
+The IBM Cloud started out with ONLY the Cloud Foundry model, but now also has support for a [IAM (IBM Cloud Identity and Access Management)](https://console.bluemix.net/docs/iam/users_roles.html#userroles) which uses the concept of Resource Groups and Access Groups to provide user access and security controls.
+
+Resource Groups can be thought of as being similar to spaces - thety are where a set of services "live", and they determine the ability of users to see and access those services.  There are two major differences between these two: 1) resource groups do not live in a hierarchy like spaces do; and 2) the security model is different (and quite a bit more granular).
+
+Let's examine the [IAM security model](https://console.bluemix.net/docs/iam/users_roles.html#userroles) in a little more depth.  The account owner or administrator will be able to assign policies for both the platform management roles and the individual service roles.  Platform management roles deal with overall resource group permissions, roles and access capability.  You can assign platform managment roles at four different levels:
+
+- **Viewer role** - in this role you can view instances, aliases, bindings, and credentials for the resource group.
+- **Operator role** - in this role you can view instances aliases, bindings, and credentials for the resource group, and you can also manage all of these.
+- **Editor role** - in this role you can view and manage instances aliases, bindings, and credentials for the resource group.  You can also rceate, delete, edit, and view service instances.
+- **Administrator** role - in this role you can do ALL management actions within the resource group
+
+In addition to the platform managemnt roles, you can also assign roles and policies for each specific service. Most services will have a simple core of three policies (Manager, Reader, Writer) - but individual services can implement policies and  
+roles that are unique for them.  You will need to check the documentation for a particular service to know (and then assign) proper roles and policies for each service.
 
 ## Project types and IBM Cloud Usage
 
