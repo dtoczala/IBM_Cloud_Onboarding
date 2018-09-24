@@ -121,7 +121,7 @@ If your application is provided to customers as a capability and you would like 
 We much more strongly recommend that our customers provide capability in tiers to their customers, and that they then try to recover their IBM Cloud costs in a less granular manner.  So your organization will be charging customers a monthly fee based on usage, perhaps across three tiers (light, medium, heavy), and then having the sum of all of these user fees roughly cover the monthly IBM Cloud costs.  This will be easier to maintain, and will require less operational overhead in the long run.
 
 # IBM Cloud Onboarding for Administrators
-IBM Cloud Administrators can face different challenges and will have different concerns that other user groups.  Sometimes the IBM Cloud Administrator will be a 
+IBM Cloud Administrators can face different challenges and will have different concerns that other user groups.  Sometimes the IBM Cloud Administrator will be a operations person, sometimes an existing cloud administrator, or they might be an non-technical person.  Our assumption here is that the new IBM Cloud Administrator is a person with a technical background.  In this section we try to capture the common questions and concerns of someone in the role of an IBM Cloud Administrator.
 
 ## Setting up a Functional ID for your Account Owner
 When looking to use the IBM Cloud for organizational (or Enterprise) use, it is considered a best practice to have your organization procure an IBM Cloud subscription (see the section on [Account types on the IBM Cloud](https://github.com/dtoczala/IBM_Cloud_Onboarding#account-types-on-the-ibm-cloud)).  Your subscription should be associated with an organization email address, not a personal user address.  This means that you will need to ask your IT department for a functional email address (or Functional ID) that is not associated with any one user.  This will be your IBM Cloud Administrator account.
@@ -145,7 +145,11 @@ Below is a set of naming conventions that we have used in many different environ
     - For example, AlphaProj_Dev_Devs_AG and AlphaProj_Test_Admins_AG access groups.  Try to have a common set of user types: like Devs, Testers, Admins, DBAs, Architects, etc.
 
 ## Administrative tasks
-Talk about how you want to script as much as possible.
+There will be a common set of administrativve tasks that you will find yourself doing all of the time.  While you may be content with going into the web interface and doing these tasks manually, via typing and point and click, you will soon get frustrated with the amount of time and effor this takes.  You should be proactive and begin to automate these activities, using scripts.
+
+You can write these scripts as programs which access the IBM Cloud API, or you can have you scripts utilize the [IBM Cloud Command Line Interface (CLI)](https://console.bluemix.net/docs/cli/index.html#overview) tool. This tool will allow you to do almost anything in the IBM Cloud, and will enable you to use scripts to automate your most repetitive IBM Cloud administrative tasks. Just follow the directions on the [IBM Cloud CLI Installation](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) page. If you would rather download the latest binaries and put the installed tool in some custom location, make sure to check out the [CLI image download links](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install-to-a-custom-directory) for the most popular OS platforms.
+
+You can also choose to just create your own custom tool to do your more common tasks, and to properly enforce your naming conventions and your IBM Cloud standards.  You can see an example of a tool like this in [Administering Your IBM Cloud Account](https://developer.ibm.com/dwblog/2018/administering-your-ibm-cloud-account-a-script-to-help/), which has a link to a GitHub repository with a sample script written in Python.
 
 ### Adding new users
 
