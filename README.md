@@ -171,16 +171,33 @@ Adding new projects is similar to adding new users in a number of ways.  It is s
 - Create and apply any service specific policies and roles
 
 ### Billing and billing issues
+Billing for your IBM Cloud account is done monthly.  You can always find out your own current usage by using the Manage > Billing selection from the web interface, or by using the proper commands (_ibmcloud billing_) from the [IBM Cloud Command Line Interface (CLI)](https://console.bluemix.net/docs/cli/index.html#overview).
+
+If you are having billing issues with your IBM Cloud account, just open a support ticket and explain your issue.  The IBM Support team should be able to work with the IBM Cloud Operations team to get your issue resolved.  To open a support ticket, go to [Support > Add Ticket](https://control.bluemix.net/support/unifiedConsole/tickets/add) from the main Web interface.
 
 ### Removing Users
+Users can be removed from environments (spaces and resource groups), projects, (organizations), or from your IBM Cloud environment as a whole (removal from IBM Cloud account and IaaS Infrastructure account).  You cannot remove a user's account - but you can remove any access that they have to any of the resources within the IBM Cloud account used by your organization.
+
+**REMEMBER THIS!** Teams and users will often generate API keys for easier access.  When users are removed from projects or accounts, it is considered a best practice to rotate (generate new) API keys for all resources on the project.  This will ensure that former users will not be able to access materials that they are not supposed to.
 
 ### Archiving Projects
+At this time many of the different constructs on the IBM Cloud are unable to be truly deleted - they need to be preserved to maintain accurate history and to preserve the integrity of some of the linked data.  In order to archive a project, you will need to rename it to something that will not be "active", and remove all user access to the project.  We suggest just appending a "ZZZ_" to the front of organizations, spaces, resource groups, and access groups that need to be archived.  This will preserve your naming conventions, and allow you to easily find archived projects and their data.
+
+After renaming all of these constructs, you will want to remove all access from all users except the administrative user.  You should also check and make sure that no infrastructure assets are still in the environment running (and accruing charges) once you have decided to archive the project.
 
 ## Suggested Documentation
-What things should you be maintaining (documents, dashboards, etc.) to communicate the state of everything going on inside your IBM Cloud area?
+What things should you be maintaining (documents, dashboards, etc.) to communicate the state of everything going on inside your IBM Cloud area?  Here is a quick list of things that you need, what they are, and a short explanation of why you need them:
+
+- **IBM Cloud Naming Conventions and Standards** - this is a brief guide that explains your IBM Cloud naming conventions, and the high level approach to structuring projects, POC's, etc.  If you follow a common "template" for projects, this should be explained.
+
+- **IBM Cloud Project List** - this should have the name of the project, brief project description, and a list of key stakeholders (business leader, architect, administrator, lead developer, etc.) and their contact information.  This is useful when there are questions about general IBM Cloud usage, or if there are issues in one of your environments.
+
+- **Project Request form** - most organizations don't just open up the IBM Cloud to everyone without limitations.  You want to have some sort of project approval process for approving IBM Cloud projects, and for tracking the spending of those projects over time.  Teams should have to submit a project request form which allows someone to determine if the project is a good use of time and resopurces.  This of course leads us to.....
+
+- **Cloud Governance Description** - this should describe your process for requesting cloud resources, launching projects on the IBM Cloud, monitoring executing projects, and the offboarding of projects.  It should explain the process teams should expect to follow, and identify all of the stakeholders in the process.
 
 ## Training Available
-There is not a lot of training available that is focused on IBM Cloud administration right now.  One option that you have is to follow the [Learning Journeys](), and go and look at the following two learning journeys:
+There is not a lot of training available that is focused on IBM Cloud administration right now.  One option that you have is to follow the [Learning Journeys](https://www-03.ibm.com/services/learning/ites.wss), and go and look at the following two learning journeys:
 - [Administering a Cloud Infrastructure](https://www-03.ibm.com/services/learning/itesp.wss/zz-en?pageType=journey_description&journeyId=LDE-ITNS_189) - primarily focused on Softlayer (IaaS or Infrastructure as a Service) administration.  This is older, so the user interfaces have changed a bit, but the basic concepts still hold true.
 - [Administering a Bluemix Based Application](https://www-03.ibm.com/services/learning/ites.wss/zz-en?pageType=journey_description&journeyId=adblmx_1) - this content is older (Bluemix is the former name of the IBM Cloud), so the user interfac e will be different, but most of the concepts still hold true.
 
