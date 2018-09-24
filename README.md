@@ -16,7 +16,7 @@ The IBM Cloud can be complex and somewhat overwhelming, but we're here to help y
   - [Naming Conventions](https://github.com/dtoczala/IBM_Cloud_Onboarding#naming-conventions)
   - [Administrative Tasks](https://github.com/dtoczala/IBM_Cloud_Onboarding#administrative-tasks)
   - [Suggested Documentation](https://github.com/dtoczala/IBM_Cloud_Onboarding#suggested-documentation)
-  - Support ADDME!!!
+  - [Training Available](https://github.com/dtoczala/IBM_Cloud_Onboarding/blob/master/README.md#training-available)
 - **[IBM Cloud Onboarding for Users](https://github.com/dtoczala/IBM_Cloud_Onboarding/tree/master#ibm-cloud-onboarding-for-users)**
   - [How to Get an IBM ID](https://github.com/dtoczala/IBM_Cloud_Onboarding#how-to-get-an-ibm-id)
   - [Choosing Services](https://github.com/dtoczala/IBM_Cloud_Onboarding#choosing-services)
