@@ -209,30 +209,36 @@ If your company or organization has an existing IBM Cloud subscription, and they
 if you are not lucky enough to work with a company with federated ID's, you will need to go out and [create an IBM Cloud account](https://console.bluemix.net/registration/) for yourself.  We suggest making your login the same as your corporate email address.  This means that you'll be able to maintain your account in the future, if your company decides to federate ID's in the future.  Supply the information asked for, and make note of your password, and you will be all set.
 
 ## Choosing services
-Choosing the services that you want ot use from the IBM Cloud can be a daunting challenge.  The first thing that you should do is to consult with your architects to determine if there are particular approaches or technologies that are suggested.  Once you have a good feel for this, go into the IBM Cloud and look at the [catalog](https://console.bluemix.net/catalog/) of avasilable services.  On the left hand side menu, you will see categories of services.  Use these to help you find what you are looking for.
+Choosing the services that you want ot use from the IBM Cloud can be a daunting challenge.  The first thing that you should do is to consult with your architects to determine if there are particular approaches or technologies that are suggested.  Once you have a good feel for this, go into the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) and look at the [catalog](https://console.bluemix.net/catalog/) of avasilable services.  On the left hand side menu, you will see categories of services.  Use these to help you find what you are looking for.
 
 When you see candidate services, click on the boxes (some refer to these as tiles) of the ones that you might be interested in.  This will take you to a page with a more complete description of the service.  These "service pages" also have one VERY IMPORTANT link on the left hand side of the window. It is entited "**View Docs**".  Clicking on this link will take you to the online documentation for that service.
 
-These online documentation pages often have links to demos, sample applications, and "how to" advice.  These are all great resources to help decide which servic es to use.  Once you begin to use the service, be sure to check out the **API Reference** secion for each service - which includes sample code for many popular programming languages that demonstrates proper usage of the service API.
+These online documentation pages often have links to demos, sample applications, and "how to" advice.  These are all great resources to help decide which services to use.  Once you begin to use the service, be sure to check out the **API Reference** secion for each service - which includes sample code for many popular programming languages that demonstrates proper usage of the service API.
 
 ### Choosing service plans
 Each service has a variety of plans.  Each plan has a different service level, capacity, and cost.  When on the main "service page" for a particular service, scroll down.  At the bottom of the page will be the different pricing plans, along with a summary of the functionality in each plan and it's cost.  Pricing plans typically run from the cheapest and least full functioned at the top, to the most expensive and most full functioned at the bottom.
 
-The boxes are ac tually a big selection box.  Click on each plan to see how it is highlighted.  The plan that is highlighted when you press the "Create" button is the plan that will be used for your new service instance.  If you make a mistake and create a service with a plan that you didn't want, just go into your IBM Cloud Dashboard and delete it.
+The pricing plan boxes are actually a big selection box.  Click on each plan to see how it is highlighted.  The plan that is highlighted when you press the "Create" button is the plan that will be used for your new service instance.  If you make a mistake and create a service with a plan that you didn't want, just go into your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) and delete it.
 
 Most services will offer a "lite" or "trial" plan.  These plans will give you some limited capability and level of service for no charge.  This gives you the ability to try some of these services out without spending any money - and let's you determine if they are a good technical fit for your particular need.  If they are a good fit, you will then want to create a new instance of the service with one of the more fully supported and fully functional plans.
 
 Make sure that you choose the right plan for your needs.  Keep in mind that many services do NOT have a migration from one plan to another.  If you find that you chose a plan without enough capacity, you will be forced to create a new one with a more full featured plan, and populate it with data from scratch.  
 
 ### Using Service Credentials
+Once you have created an instance of a service, you will then want to be able to access this service from your software orchestration program.  This can be done through use of the proper service credentials.  These credentials can be thought of as a "username" and "password" that you will use for accessing the service.  often these will be included as part of the request header for your REST based service call.
 
-
-### Learning about services
+You can find these service credentials by clicking on the particular instance that you are interested in on your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps), and then by clicking on the **Service Credentials** menu item in the menu for that specific service instance.  Note that you in addition to the credentials that come with the service as a default, you also have the ability to create specific service credentials for specific uses with your service.
 
 ## Joining projects
+Joining projects involves getting your account ID added to the proper orgs/spaces/resource groups by the administrator of those resources.  Sometimes this is the administrator for a particular project, sometimes this is your IBM Cloud administrator.  The process for doing this will be determined by the policies that your organization has in place, which have been (hopefully) captured in some sort of [cloud governance documentation](https://github.com/dtoczala/IBM_Cloud_Onboarding#suggested-documentation).
 
 ## Account context 
-"Why can't I see the services that I created yesterday???"
+One thing to keep in mind as you work in the IBM Cloud.  Many accounts are created by individuals - and these individuals have their own IBM Cloud resources available to them.  They also have access to resources based on their membership in one or more projects on the IBM Cloud account associated with their company or organization.  Often people will create service instances in their own account areas, and then wonder why they have disappeared.  They didn't disappear, it's just that you are looking at the IBM Cloud area associated with your company, and you do not see you own private resources within that context.
+
+So how can I tell what I am looking at?  If you go to your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) and look in the upper right corner, you will see a small circle.  If you have populated your [profile](https://console.bluemix.net/account/profile) with a picture of yourself, you can see how stunningly beautiful you are.  If you haven't put your picture into your [profile](https://console.bluemix.net/account/profile), then you will just see your initials.
+
+Clicking on that circle in the upper right hand corner will reveal your account context.  One of the fields in there is called 
+account.  Click on that and you can see all of the accounts that you have access to.  You may have access to more than one account - if you do, then you can scroll up and down the list of accounts that you have visibility to and select which context you would like to be in.  You also have the ability to upgrade your account (if you are still using a trial account), and update your [profile](https://console.bluemix.net/account/profile) information.
 
 ## Educational Resources
 There is specialized support and training for all of the services on the IBM Cloud.  When looking at the service in the catalog, just click on the **View Docs** link, and you will see not only service documentation, but starter projects, and other materials to help you get started with that particular service.
