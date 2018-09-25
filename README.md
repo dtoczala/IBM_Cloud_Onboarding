@@ -197,7 +197,9 @@ What things should you be maintaining (documents, dashboards, etc.) to communica
 - **Cloud Governance Description** - this should describe your process for requesting cloud resources, launching projects on the IBM Cloud, monitoring executing projects, and the offboarding of projects.  It should explain the process teams should expect to follow, and identify all of the stakeholders in the process.
 
 ## Training Available
-There is not a lot of training available that is focused on IBM Cloud administration right now.  One option that you have is to follow the [Learning Journeys](https://www-03.ibm.com/services/learning/ites.wss), and go and look at the following two learning journeys:
+There is not a lot of training available that is focused on IBM Cloud administration right now.  There is a nice video series on [inviting and managing users and infrastructure](https://www.youtube.com/watch?v=ZmjHFC5kaHI&list=PLzpeuWUENMK0Zown5IwHCLb-P9bpW_OpU&index=2), [IBM Cloud network topology](https://www.youtube.com/watch?v=olf88LnvAD4&index=3&list=PLzpeuWUENMK0Zown5IwHCLb-P9bpW_OpU), and [IBM Cloud Support Resources](https://www.youtube.com/watch?v=JP-dq1kqAJA&list=PLzpeuWUENMK0Zown5IwHCLb-P9bpW_OpU&index=4).
+
+Another option that you have is to follow the [Learning Journeys](https://www-03.ibm.com/services/learning/ites.wss), and go and look at the following two learning journeys:
 - [Administering a Cloud Infrastructure](https://www-03.ibm.com/services/learning/itesp.wss/zz-en?pageType=journey_description&journeyId=LDE-ITNS_189) - primarily focused on Softlayer (IaaS or Infrastructure as a Service) administration.  This is older, so the user interfaces have changed a bit, but the basic concepts still hold true.
 - [Administering a Bluemix Based Application](https://www-03.ibm.com/services/learning/ites.wss/zz-en?pageType=journey_description&journeyId=adblmx_1) - this content is older (Bluemix is the former name of the IBM Cloud), so the user interfac e will be different, but most of the concepts still hold true.
 
@@ -206,7 +208,10 @@ Getting onto the [IBM Cloud is easy](https://console.bluemix.net), and beginning
 
 ## How to get an IBM ID
 If your company or organization has an existing IBM Cloud subscription, and they have federated IBM Cloud ID's, then all you need to do is to go to your [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps), and supply your corporate ID (typically an email address like joe.smith@acme.com) and your corporate password.  When a company decides to federate the ID's of it's users, those users authenticate against their own's company's identity servers, and everyone with a valid corporate ID will have access to the IBM Cloud.
-if you are not lucky enough to work with a company with federated ID's, you will need to go out and [create an IBM Cloud account](https://console.bluemix.net/registration/) for yourself.  We suggest making your login the same as your corporate email address.  This means that you'll be able to maintain your account in the future, if your company decides to federate ID's in the future.  Supply the information asked for, and make note of your password, and you will be all set.
+
+If you are not lucky enough to work with a company with federated ID's, you will need to go out and [create an IBM Cloud account](https://console.bluemix.net/registration/) for yourself.  We suggest making your login the same as your corporate email address.  This means that you'll be able to maintain your account in the future, if your company decides to federate ID's in the future.  Supply the information asked for, and make note of your password, and you will be all set.
+
+You might also find this [video explaining getting an account, logging in, and some other account functions](https://www.youtube.com/watch?v=9d5KmG_51i4&list=PLzpeuWUENMK0Zown5IwHCLb-P9bpW_OpU), useful to you.
 
 ## Choosing services
 Choosing the services that you want ot use from the IBM Cloud can be a daunting challenge.  The first thing that you should do is to consult with your architects to determine if there are particular approaches or technologies that are suggested.  Once you have a good feel for this, go into the [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) and look at the [catalog](https://console.bluemix.net/catalog/) of avasilable services.  On the left hand side menu, you will see categories of services.  Use these to help you find what you are looking for.
