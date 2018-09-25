@@ -209,11 +209,23 @@ If your company or organization has an existing IBM Cloud subscription, and they
 if you are not lucky enough to work with a company with federated ID's, you will need to go out and [create an IBM Cloud account](https://console.bluemix.net/registration/) for yourself.  We suggest making your login the same as your corporate email address.  This means that you'll be able to maintain your account in the future, if your company decides to federate ID's in the future.  Supply the information asked for, and make note of your password, and you will be all set.
 
 ## Choosing services
+Choosing the services that you want ot use from the IBM Cloud can be a daunting challenge.  The first thing that you should do is to consult with your architects to determine if there are particular approaches or technologies that are suggested.  Once you have a good feel for this, go into the IBM Cloud and look at the [catalog](https://console.bluemix.net/catalog/) of avasilable services.  On the left hand side menu, you will see categories of services.  Use these to help you find what you are looking for.
 
+When you see candidate services, click on the boxes (some refer to these as tiles) of the ones that you might be interested in.  This will take you to a page with a more complete description of the service.  These "service pages" also have one VERY IMPORTANT link on the left hand side of the window. It is entited "**View Docs**".  Clicking on this link will take you to the online documentation for that service.
+
+These online documentation pages often have links to demos, sample applications, and "how to" advice.  These are all great resources to help decide which servic es to use.  Once you begin to use the service, be sure to check out the **API Reference** secion for each service - which includes sample code for many popular programming languages that demonstrates proper usage of the service API.
 
 ### Choosing service plans
+Each service has a variety of plans.  Each plan has a different service level, capacity, and cost.  When on the main "service page" for a particular service, scroll down.  At the bottom of the page will be the different pricing plans, along with a summary of the functionality in each plan and it's cost.  Pricing plans typically run from the cheapest and least full functioned at the top, to the most expensive and most full functioned at the bottom.
+
+The boxes are ac tually a big selection box.  Click on each plan to see how it is highlighted.  The plan that is highlighted when you press the "Create" button is the plan that will be used for your new service instance.  If you make a mistake and create a service with a plan that you didn't want, just go into your IBM Cloud Dashboard and delete it.
+
+Most services will offer a "lite" or "trial" plan.  These plans will give you some limited capability and level of service for no charge.  This gives you the ability to try some of these services out without spending any money - and let's you determine if they are a good technical fit for your particular need.  If they are a good fit, you will then want to create a new instance of the service with one of the more fully supported and fully functional plans.
+
+Make sure that you choose the right plan for your needs.  Keep in mind that many services do NOT have a migration from one plan to another.  If you find that you chose a plan without enough capacity, you will be forced to create a new one with a more full featured plan, and populate it with data from scratch.  
 
 ### Using Service Credentials
+
 
 ### Learning about services
 
