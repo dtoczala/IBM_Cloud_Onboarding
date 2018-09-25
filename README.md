@@ -215,6 +215,8 @@ When you see candidate services, click on the boxes (some refer to these as tile
 
 These online documentation pages often have links to demos, sample applications, and "how to" advice.  These are all great resources to help decide which services to use.  Once you begin to use the service, be sure to check out the **API Reference** secion for each service - which includes sample code for many popular programming languages that demonstrates proper usage of the service API.
 
+When choosing services, you might want to check out the sister landing pages of this onboarding guide.  For the Watson and AI services, you will want to read the [Watson Landing Page](https://github.com/dtoczala/watson-landing-page) for guidance on the various Watson services and for links to some excellent technical materials.  For IBM Cloud services, you will weant to check out the [IBM Cloud Landing Page](https://github.com/dtoczala/bluemix-landing-page), which also has explanations of some of the broad IBM Cloud capabilities, and provides links to highly respected technical content that will help you.
+
 ### Choosing service plans
 Each service has a variety of plans.  Each plan has a different service level, capacity, and cost.  When on the main "service page" for a particular service, scroll down.  At the bottom of the page will be the different pricing plans, along with a summary of the functionality in each plan and it's cost.  Pricing plans typically run from the cheapest and least full functioned at the top, to the most expensive and most full functioned at the bottom.
 
