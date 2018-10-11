@@ -44,6 +44,7 @@ The IBM Cloud documentation has a [diagram of all of these relationships](https:
 - [Getting Started Right on the IBM Cloud](https://dtoczala.wordpress.com/2018/09/20/getting-started-right-on-the-ibm-cloud/) - a good primer on getting started with IBM Watson services on the IBM Cloud.
 - [IBM Cloud – Identity and Access Management](https://github.com/jamesbeltonIBM/IBMCloudIAM) - An EXCELLENT beginner’s guide to understanding IAM written by [James Belton](https://github.com/jamesbeltonIBM).  My recommendation for the place to start when attempting to understand IAM on IBM Cloud.
 - [Bluemix CLI Commands for Managing Keys and Policies](https://console.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) - a listing and description of the various command line options for managing keys and policies for IAM.
+- [Help – My Machine is Locked Down and I Can’t Install the IBM Cloud CLI Tool!](https://thebluemixdigest.wordpress.com/2018/10/11/help-my-machine-is-locked-down-and-i-cant-install-the-ibm-cloud-cli-tool/) - another great blog post by [James Belton](https://github.com/jamesbeltonIBM).  This shows you how to build your own virtual server to run the IBM Cloud CLI commands on.
 - [IAM Recipe for IBM Cloud Access & Migration Path from CF](https://brandymguillory.wordpress.com/2018/05/31/iam-recipe-for-ibm-cloud-access-migration-path-from-cf/) - a nice walk through of setting up IAM for a real-world application.
 
 ## Organization of the Materials
