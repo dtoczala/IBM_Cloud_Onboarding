@@ -256,8 +256,10 @@ There is specialized support and training for all of the services on the IBM Clo
 There is also a more general course, called [Administering a Bluemix Based Application](https://www-03.ibm.com/services/learning/ites.wss/zz-en?pageType=journey_description&journeyId=adblmx_1), but this content is older (Bluemix is the former name of the IBM Cloud).  The user interface will be different, but most of the concepts still hold true.
 
 ## Support Resources
-As you are utilizing the IBM Cloud services you may find that there are certain tasks in which obtaining [IBM Cloud support](https://www.ibm.com/cloud/support) is valuable. In the case of service functionality unexpected behavior or billing questions, there are three tiers for IBM Cloud support. 
-Basic: Gives you 24x7 access to our technical support team over the web, phone or chat. 
-Advanced: Includes all of the basic tier features but also provide for prioritized case handling(Sev 1-4) which allows for initial response SLO e.g. Sev 1 ticket response less than an hour. 
-Premium: Includes all of the advanced tier features but also gives a high-value engagement in the form of a technical account manager assigned to your account as well as the fastest initial response SLOs e.g. Sev 1 ticket response less than 15 minutes and providing hourly updates.
+As you are utilizing the IBM Cloud services you may find that there are certain tasks in which obtaining [IBM Cloud support](https://www.ibm.com/cloud/support) is valuable. 
+
+In the case of service functionality unexpected behavior or billing questions, there are three tiers for IBM Cloud support. 
+- Basic: Gives you 24x7 access to our technical support team over the web, phone or chat. 
+- Advanced: Includes all of the basic tier features but also provide for prioritized case handling(Sev 1-4) which allows for initial response SLO e.g. Sev 1 ticket response less than an hour. 
+- Premium: Includes all of the advanced tier features but also gives a high-value engagement in the form of a technical account manager assigned to your account as well as the fastest initial response SLOs e.g. Sev 1 ticket response less than 15 minutes and providing hourly updates.
 
